@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 9</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+ 
+  <body class="Site">
+    <div class="Site-content">
+        <div class="note-taker">
+            <h1 class="title">Note Taker To Session Storage App</h1>
+            <div class="storage-buttons">
+                <a class="clear">Clear Storage</a>
+                <a class="empty">Empty Storage</a>
+            </div>
+            <div id="storage-quota-msg"></div>
+            <div class="file-save-button">
+                <a id="save">Save Text To File for Download</a>
+            </div>
+            <div class="textarea-wrapper">
+                <textarea name="text" class="session-storage" id="textArea" cols="50"
+                    rows="10">Hello! I love JavaScript, and I prefer sessionStorage. How about you? 👍</textarea>
+                <button type="button" id="save-text">Save Text</button>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <script>
+            const theDate = new Date();
+            const footer = document.querySelector(".site-footer");
+            footer.style.fontWeight = "600";
+            footer.style.letterSpacing = "0.07rem";
+            footer.style.fontFamily = "Arimo, sans-serif";
+            footer.innerHTML =
+                `© ${theDate.getFullYear()}`;
+        </script>
+    </footer>
+    <script src="JS/session.js"></script>
+  </body>
+</html>

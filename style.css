@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu+Mono&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh; }
+
+
+
+  body {
+  background-color: #f3f4f7;
+  font-family: "Roboto Mono", monospace;
+}
+
+.Site-content {
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+h1 {
+  color: #ea4335;
+  font-size: 3rem;
+  margin: 30px;
+}
+h2 {
+  margin: 10px 0px 10px;
+  font-size: 3rem;
+  color: #4285f4;
+}
+h3 {
+  color: #595959;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4285f4;
+  padding: 8px;
+}
+
+p span {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2e2d2d;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none; 
+  text-align: center;
+  }
+  
+  .note-taker {
+  width: 80%;
+  margin: 1.5rem auto;
+  max-width: 800px;
+  }
+  
+  
+  .note-taker 
+  #textArea {
+  width: 100%;
+  }
+
+  .clear,
+.empty,
+#save {
+  
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+margin: 0 auto;
+
+}
+
+
+.clear:focus, 
+.clear:hover, 
+.clear:active,
+.empty:focus,
+.empty:hover,
+.empty:active,
+#save:focus,
+#save:hover,
+#save:active {
+color:#1262a3;
+text-decoration: none; 
+}
+textarea{
+  resize: none;
+  width: 400px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #ea4335;
+  color: white;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,93 @@
+1. The Web Storage API permits applications to store data within an individual user's browser.
+
+2. Before HTML5 application data was stored in cookies, included in each server request. 
+
+3. 
+    data is never transferred to the server.
+    data is stored with no expiration date by default, and can only be cleared using JavaScript, clearing the Browser cache, or localStorage itself located in the Browser Console.
+    Storage limit is the maximum compared to sessionStorage and cookies (10MB).
+ 
+
+4. The 2 objects are called localStorage object and sessionStorage objects.
+
+5. LocalStorage object and sessionStorage can only be read on client-side.
+
+6. Cookies can be read server side. They are popular because they allow sites to store user data directly into the user's browser. Mostly used to identify a user's session.It may contain sensitive data.
+
+7. Because Cookies could contain sensitive information.
+
+8. HttpOnly flag is good for blocking access of a cookie from client side and JavaScript coded. It mitigates the negative 
+impact of an XSS (Cross Site Scripting) 
+
+9. LocalStorage and sessionStorage of the Web Storage API connected to browser window. 
+
+10.	Permits to set, retrieve, and remove data for a specific domain and storage type (local or session).
+
+11.	The length property returns an integer representing the number of data items stored in the Storage object.
+
+function populateStorage() {
+    localStorage.setItem('bgcolor', 'yellow');
+    localStorage.setItem('font', 'Helvetica');
+    localStorage.setItem('image', 'cats.png');
+    
+    localStorage.length; // Should return 3
+}
+
+
+12.	Storage.key(): when passed a certain number represented by n, this method returns the name of the nth key in the storage.
+
+Storage.getItem(): when passed a key name, will return that key's value, or null if the key does not exist.
+
+example: (sessionStorage.getItem('autosave', myStory))
+
+Storage.setItem(): when passed a key name and value, will add that key to the storage, or update that key's value if it already exists.
+sessionStorage.setItem("autosave", textField.value);
+
+example: sessionStorage.setItem('autosave', myStory);
+
+Storage.removeItem(): when passed a key name, will remove that key from the storage. If there is no item associated with the given key, this method will do nothing.
+sessionStorage.removeItem("autosave", textField.value);
+
+ sessionStorage.removeItem('autosave', myStory.value);
+
+Storage.clear(): when invoked, will empty all keys out of the storage.
+sessionStorage.clear();
+
+example:
+
+function clearStorage() {
+  const myStory = document.getElementById('textArea');
+  myStory.value = '';
+  sessionStorage.removeItem('autosave', myStory.value);
+}
+
+
+13.	Only the Secure attribute lets you forbid a cookie to be ever transmitted over simple HTTP. It can only be transmitted over HTTPS.
+
+14.	SessionStorage
+    - Maintains storage in the applications tab in Chrome Developer tools, in Inspector tab then storage tab of the Firefox Developer Tools,
+     storage tab of the JavaScript console in Safari
+    - Data is available for the duration of the page session when it opens,including when a page reloads/refreshes
+    - Stores data only for the session until closed.
+    - Storage limit is larger than a cookie, max 5MB.
+
+    LocalStorage       
+    - Data is stored with no expiration date by default. Can only be cleared using    JavaScript, clear browser cache or localStorage itself
+   in the browser console.
+    - Storage limit is max 10MB vs session and cookies   
+
+15.	The data is never transferred to the server. Storage limits are larger than cookies.
+
+16.	catch statement marks a block of statements to try out code and specifics a response if an exception is thrown.
+
+17.	 If there IS sessionStorage support, then the program steps into the else statement. There we set and get our sessionStorage as well as check if we have exceeded our sessionStorage quota. Since we have to catch our exception, we need to use a try...catch statement.
+
+18.	JSON.stringify() converts a JavaScript object or value to a JSON string, replacing values if a replacer function is selected. const csv = JSON.stringify(sessionStorage['autosave']);
+
+19.	CSV variable is new Blob(blobParts options). The BlobPArts: an array of the Blob bufferSource or strings values. The way of block is a string value and use the typ option in the type of Blob. 
+
+20.
+
+Message saved to sessionStorage.
+"Hello! I love JavaScript, and I prefer sessionStorage. How about you? 👍"
+session.js:10 
