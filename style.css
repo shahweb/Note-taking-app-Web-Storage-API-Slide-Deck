@@ -7,11 +7,10 @@
 }
 
 html {
-  height: 100vh; }
+  height: 100vh;
+}
 
-
-
-  body {
+body {
   background-color: #f3f4f7;
   font-family: "Roboto Mono", monospace;
 }
@@ -20,15 +19,15 @@ html {
   height: 40rem;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
-footer{
+footer {
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-
 
 h1 {
   color: #ea4335;
@@ -65,38 +64,33 @@ p span {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
   text-align: center;
-  }
-  
-  .note-taker {
+}
+
+.note-taker {
   width: 80%;
   margin: 1.5rem auto;
   max-width: 800px;
-  }
-  
-  
-  .note-taker 
-  #textArea {
-  width: 100%;
-  }
+}
 
-  .clear,
+.note-taker #textArea {
+  width: 100%;
+}
+
+.clear,
 .empty,
 #save {
-  
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-margin: 0 auto;
-
+  margin: 0 auto;
 }
 
-
-.clear:focus, 
-.clear:hover, 
+.clear:focus,
+.clear:hover,
 .clear:active,
 .empty:focus,
 .empty:hover,
@@ -104,10 +98,10 @@ margin: 0 auto;
 #save:focus,
 #save:hover,
 #save:active {
-color:#1262a3;
-text-decoration: none; 
+  color: #1262a3;
+  text-decoration: none;
 }
-textarea{
+textarea {
   resize: none;
   width: 400px;
   border-radius: 4px;
@@ -119,10 +113,8 @@ textarea{
 .textarea-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
-
-
 
 button {
   margin: 20px;
